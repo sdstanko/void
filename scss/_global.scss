@@ -14,3 +14,68 @@ body.lock {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.btn {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+	text-decoration: none;
+	white-space: nowrap;
+	background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%);
+	box-shadow: 0px 20px 30px rgba(98, 214, 179, 0.3);
+	transition: all .2s linear;
+
+	&:hover {
+
+		&::before {
+			opacity: 1;
+			
+		}
+		background: linear-gradient(93.99deg, #2FE99C 0.85%, #33B8B6 100%);
+	}
+}
+
+.inner {
+	padding: 100px 0;
+}
+
+.title {
+	margin-bottom: 12px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 129.4%;
+	text-transform: uppercase;
+	color: #3AB2B4;
+}
+
+.subtitle {
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 129.4%;
+	text-transform: uppercase;
+	color: #333333;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 40px;
+		height: 3px;
+		background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%);
+	}
+}
+
+.description {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 129.4%;
+	color: #000000;
+}

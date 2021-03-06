@@ -1,0 +1,39 @@
+.request {
+	padding: 70px 0;
+	background-color: #F5F5F5;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #333333;
+	}
+
+	&__form {
+		display: flex;
+		flex-grow: 1;
+		margin-left: 90px;
+	}
+
+	&__phone {
+		padding: 15px 70px 15px 20px;
+		border: 2px solid rgba(51, 51, 51, 0.1);
+
+		&::placeholder {
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 129.4%;
+			color: #333333;
+			opacity: 0.3;
+		}
+	}
+
+	&__button {
+		margin-left: 20px;
+	}
+}
