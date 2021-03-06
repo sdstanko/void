@@ -1,0 +1,59 @@
+.benefits {
+	background-color: #F8F8FA;
+
+	&__inner {}
+
+	&__title {
+	}
+	
+	&__subtitle {
+		margin-bottom: 75px;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px 100px;
+	}
+
+	&__item {}
+
+	&__buttons {}
+
+	&__button {
+		&+& {
+			margin-left: 30px;
+		}
+	}
+}
+
+.item-benefits {
+	flex: 0 1 33.33333%;
+	margin-bottom: 45px;
+	padding: 0 15px;
+
+	&__heading {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__icon {}
+
+	&__title {
+		margin-left: 15px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #000000;
+	}
+
+	&__description {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 129.4%;
+		color: #000000;
+	}
+}
+
+.btn {}
