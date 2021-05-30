@@ -88,6 +88,9 @@ select {
 
 html {
   font-family: 'Museo-Sans';
+}
+
+.page-wrapper {
   overflow-x: hidden;
 }
 
@@ -95,10 +98,8 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  body.lock {
-    overflow: hidden;
-  }
+body.lock {
+  overflow: hidden;
 }
 
 .container {

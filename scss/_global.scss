@@ -1,5 +1,9 @@
 html {
 	font-family: 'Museo-Sans';
+
+}
+
+.page-wrapper {
 	overflow-x: hidden;
 }
 
@@ -8,12 +12,10 @@ body {
 }
 
 body.lock {
-	@media(max-width: 768px) {
-		overflow: hidden;
-	}
+	overflow: hidden;
 }
 
-.container	{
+.container {
 	width: 100%;
 	max-width: 1150px;
 	margin: 0 auto;
@@ -42,8 +44,9 @@ body.lock {
 
 		&::before {
 			opacity: 1;
-			
+
 		}
+
 		background: linear-gradient(93.99deg, #2FE99C 0.85%, #33B8B6 100%);
 	}
 }
