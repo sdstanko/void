@@ -10,6 +10,10 @@
 
 	&__slider {
 		padding: 0 90px;
+
+		@media (max-width: 768px) {
+			padding: 0;
+		}
 	}
 
 	&__item {}
@@ -23,6 +27,15 @@
 	border: 1px solid #F5F5F5;
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);
 	border-radius: 10px;
+
+	@media (max-width: 1024px) {
+		padding: 20px 20px 20px 35px;
+	}
+
+	@media (max-width: 650px) {
+		text-align: center;
+		padding: 30px 20px 20px 20px;
+	}
 
 	&__number {
 		position: absolute;
@@ -40,6 +53,12 @@
 		background-color: #30DDA2;
 		border: 5px solid #F5F5F5;
 		border-radius: 100%;
+
+		@media (max-width: 1024px) {
+			top: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__label {
@@ -48,6 +67,10 @@
 		font-size: 26px;
 		line-height: 31px;
 		color: #333333;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&__description {
@@ -55,5 +78,10 @@
 		font-size: 22px;
 		line-height: 36px;
 		color: #333333;
+
+		@media (max-width: 1024px) {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 }

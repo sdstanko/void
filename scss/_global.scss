@@ -1,5 +1,10 @@
 html {
 	font-family: 'Museo-Sans';
+	// overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 body.lock {
@@ -29,6 +34,10 @@ body.lock {
 	box-shadow: 0px 20px 30px rgba(98, 214, 179, 0.3);
 	transition: all .2s linear;
 
+	@media (max-width: 1024px) {
+		padding: 12px 22px;
+	}
+
 	&:hover {
 
 		&::before {
@@ -41,6 +50,10 @@ body.lock {
 
 .inner {
 	padding: 100px 0;
+
+	@media (max-width: 1024px) {
+		padding: 60px 0;
+	}
 }
 
 .title {
@@ -50,6 +63,15 @@ body.lock {
 	line-height: 129.4%;
 	text-transform: uppercase;
 	color: #3AB2B4;
+
+	@media (max-width: 1024px) {
+		margin-bottom: 8px;
+		font-size: 17px;
+	}
+
+	@media (max-width: 768px) {
+		text-align: center;
+	}
 }
 
 .subtitle {
@@ -62,6 +84,16 @@ body.lock {
 	text-transform: uppercase;
 	color: #333333;
 
+	@media (max-width: 1024px) {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		font-size: 26px;
+	}
+
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -70,6 +102,11 @@ body.lock {
 		width: 40px;
 		height: 3px;
 		background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%);
+
+		@media (max-width: 768px) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -78,4 +115,8 @@ body.lock {
 	font-size: 18px;
 	line-height: 129.4%;
 	color: #000000;
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+	}
 }
