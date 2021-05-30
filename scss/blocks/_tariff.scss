@@ -3,16 +3,24 @@
 
 	&__inner {}
 
-	&__title {
-	}
-	
+	&__title {}
+
 	&__subtitle {
 		margin-bottom: 70px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__row {
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -20px;
+
+		@media (max-width: 1024px) {
+			justify-content: center;
+		}
 	}
 
 	&__col {
@@ -20,6 +28,14 @@
 		flex: 0 1 33.33333%;
 		padding: 0 20px;
 
+		@media (max-width: 1024px) {
+			flex: 0 1 50%;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 610px) {
+			flex: 0 1 100%;
+		}
 	}
 
 	&__item {

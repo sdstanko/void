@@ -6,10 +6,22 @@
 
 	&__subtitle {
 		margin-bottom: 75px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 35px;
+		}
 	}
 
 	&__slider {
 		padding: 0 90px;
+
+		@media (max-width: 768px) {
+			padding: 0;
+		}
 	}
 
 	&__item {}
@@ -22,6 +34,10 @@
 		border-radius: 100%;
 		width: 100px;
 		height: 100px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__text {
@@ -31,10 +47,18 @@
 		font-size: 16px;
 		line-height: 129.4%;
 		color: #333333;
+
+		@media (max-width: 768px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__person {
 		text-align: right;
+
+		@media (max-width: 768px) {
+			text-align: center;
+		}
 	}
 
 	&__name {
@@ -48,5 +72,9 @@
 	&__logo {
 		margin-left: auto;
 		max-width: 98px;
+
+		@media (max-width: 768px) {
+			margin: 0 auto;
+		}
 	}
 }
