@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -239,45 +240,93 @@
 							найдем подходящее решение.</p>
 
 						<div class="works__slider">
-							<div class="works__item item-works">
-								<div class="item-works__inner">
-									<img src="images/works-1.png" alt="" class="item-works__image">
-									<div class="item-works__text">
-										<div class="item-works__title">
-											Платформа генерации лайков в социальных сетях для
+							<div class="works__wrapper swiper-wrapper">
+								<div class="works__item item-works swiper-slide">
+									<div class="item-works__inner">
+										<img src="images/works-1.png" alt="" class="item-works__image">
+										<div class="item-works__text">
+											<div class="item-works__title">
+												Платформа генерации лайков в социальных сетях для
+											</div>
+											<p class="item-works__description">
+												Создали для Азербайджанского рынка.
+												Пользователи могут заказать накрутку и посмотреть статистику по
+												выполненной
+												работе прямо в приложении.
+												Платформа ориентирована на новый бизнес, которому нужно помочь
+												раскрутиться.
+											</p>
+											<div class="item-works__stats stats-works">
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														30
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">дизайн</div>
+												</div>
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														120
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">программирование</div>
+												</div>
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														1500
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">тестирование</div>
+												</div>
+											</div>
 										</div>
-										<p class="item-works__description">
-											Создали для Азербайджанского рынка.
-											Пользователи могут заказать накрутку и посмотреть статистику по выполненной
-											работе прямо в приложении.
-											Платформа ориентирована на новый бизнес, которому нужно помочь раскрутиться.
-										</p>
-										<div class="item-works__stats stats-works">
-											<div class="stats-works__col">
-												<div class="stats-works__hours">
-													30
-													<span>часов</span>
-												</div>
-												<div class="stats-works__label">дизайн</div>
+									</div>
+								</div>
+								<div class="works__item item-works swiper-slide">
+									<div class="item-works__inner">
+										<img src="images/works-2.jpg" alt="" class="item-works__image">
+										<div class="item-works__text">
+											<div class="item-works__title">
+												Платформа генерации лайков в социальных сетях для
 											</div>
-											<div class="stats-works__col">
-												<div class="stats-works__hours">
-													120
-													<span>часов</span>
+											<p class="item-works__description">
+												Создали для Азербайджанского рынка.
+												Пользователи могут заказать накрутку и посмотреть статистику по
+												выполненной
+												работе прямо в приложении.
+												Платформа ориентирована на новый бизнес, которому нужно помочь
+												раскрутиться.
+											</p>
+											<div class="item-works__stats stats-works">
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														30
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">дизайн</div>
 												</div>
-												<div class="stats-works__label">программирование</div>
-											</div>
-											<div class="stats-works__col">
-												<div class="stats-works__hours">
-													1500
-													<span>часов</span>
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														120
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">программирование</div>
 												</div>
-												<div class="stats-works__label">тестирование</div>
+												<div class="stats-works__col">
+													<div class="stats-works__hours">
+														1500
+														<span>часов</span>
+													</div>
+													<div class="stats-works__label">тестирование</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="swiper-pagination"></div>
+							<div class="button-next"><img src="/images/icons/arrow.svg" alt=""></div>
+							<div class="button-prev"><img src="/images/icons/arrow.svg" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -367,16 +416,38 @@
 					<div class="steps__inner inner">
 						<h2 class="steps__title title">Этапы создания приложений</h2>
 						<h3 class="steps__subtitle subtitle">Как происходит разработка</h3>
-						<div class="steps__slider">
-							<div class="steps__item item-steps">
-								<div class="item-steps__number">1</div>
-								<div class="item-steps__label">Аналитика</div>
-								<p class="item-steps__description">Изучаем ваш бизнес, потребности клиентов и
-									анализируем
-									конкурентов. Делаем
-									концепцию, которая будет во всем лучше, чем у других в этой сфере.</p>
+						<div class="steps__wrapper">
+							<div class="steps__slider">
+								<div class="swiper-wrapper">
+									<div class="steps__item item-steps swiper-slide">
+										<div class="item-steps__number">1</div>
+										<div class="item-steps__label">Аналитика</div>
+										<p class="item-steps__description">Изучаем ваш бизнес, потребности клиентов и
+											анализируем
+											конкурентов. Делаем
+											концепцию, которая будет во всем лучше, чем у других в этой сфере.</p>
+									</div>
+									<div class="steps__item item-steps swiper-slide">
+										<div class="item-steps__number">2</div>
+										<div class="item-steps__label">Аналитика</div>
+										<p class="item-steps__description">Изучаем ваш бизнес, потребности клиентов и
+											анализируем
+											конкурентов. Делаем
+											концепцию, которая будет во всем лучше, чем у других в этой сфере.</p>
+									</div>
+									<div class="steps__item item-steps swiper-slide">
+										<div class="item-steps__number">3</div>
+										<div class="item-steps__label">Аналитика</div>
+										<p class="item-steps__description">Изучаем ваш бизнес, потребности клиентов и
+											анализируем
+											конкурентов. Делаем
+											концепцию, которая будет во всем лучше, чем у других в этой сфере.</p>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -446,23 +517,70 @@
 					<div class="reviews__inner inner">
 						<h2 class="reviews__title title">Что о нас говорят</h2>
 						<h3 class="reviews__subtitle subtitle">Отзывы</h3>
-						<div class="reviews__slider">
-							<div class="reviews__item item-reviews">
-								<img src="images/reviews-photo.png" class="item-reviews__photo">
-								<p class="item-reviews__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore
-									magna aliqua. Facilisi cras fermentum odio eu feugiat pretium nibh. Ullamcorper
-									malesuada proin libero nunc
-									consequat. Etiam sit amet nisl purus in. Etiam dignissim diam quis enim lobortis
-									scelerisque fermentum dui.
-								</p>
-								<div class="item-reviews__person">
-									<div class="item-reviews__name">Александр Андреев</div>
-									<img src="images/clients/2.png" alt="" class="item-reviews__logo">
+						<div class="reviews__wrapper">
+							<div class="reviews__slider">
+								<div class="swiper-wrapper">
+									<div class="reviews__item item-reviews swiper-slide">
+										<img src="images/reviews-photo.png" class="item-reviews__photo">
+										<p class="item-reviews__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore
+											magna aliqua. Facilisi cras fermentum odio eu feugiat pretium nibh.
+											Ullamcorper
+											malesuada proin libero nunc
+											consequat. Etiam sit amet nisl purus in. Etiam dignissim diam quis enim
+											lobortis
+											scelerisque fermentum dui.
+										</p>
+										<div class="item-reviews__person">
+											<div class="item-reviews__name">Александр Андреев</div>
+											<img src="images/clients/2.png" alt="" class="item-reviews__logo">
+										</div>
+									</div>
+									<div class="reviews__item item-reviews swiper-slide">
+										<img src="images/reviews-photo.png" class="item-reviews__photo">
+										<p class="item-reviews__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore
+											magna aliqua. Facilisi cras fermentum odio eu feugiat pretium nibh.
+											Ullamcorper
+											malesuada proin libero nunc
+											consequat. Etiam sit amet nisl purus in. Etiam dignissim diam quis enim
+											lobortis
+											scelerisque fermentum dui.
+										</p>
+										<div class="item-reviews__person">
+											<div class="item-reviews__name">Александр Андреев</div>
+											<img src="images/clients/2.png" alt="" class="item-reviews__logo">
+										</div>
+									</div>
+									<div class="reviews__item item-reviews swiper-slide">
+										<img src="images/reviews-photo.png" class="item-reviews__photo">
+										<p class="item-reviews__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore
+											magna aliqua. Facilisi cras fermentum odio eu feugiat pretium nibh.
+											Ullamcorper
+											malesuada proin libero nunc
+											consequat. Etiam sit amet nisl purus in. Etiam dignissim diam quis enim
+											lobortis
+											scelerisque fermentum dui.
+										</p>
+										<div class="item-reviews__person">
+											<div class="item-reviews__name">Александр Андреев</div>
+											<img src="images/clients/2.png" alt="" class="item-reviews__logo">
+										</div>
+									</div>
 								</div>
+								<div class="button-next"><img src="/images/icons/arrow.svg" alt=""></div>
+								<div class="button-prev"><img src="/images/icons/arrow.svg" alt=""></div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -475,12 +593,9 @@
 						<h2 class="qeustions__title title">Что у нас спрашивают</h2>
 						<h3 class="questions__subtitle subtitle">Частые вопросы</h3>
 						<div class="questions__accordion">
-							<div class="questions__item item-questions">
+							<div data-spollers data-one-spoller class="questions__item item-questions">
 								<div class="item-questions__trigger">
-									<div class="item-questions__button">
-										<span></span>
-										<span></span>
-									</div>
+									<button data-spoller class="item-questions__button"></button>
 									<div class="item-questions__label">Почему стоимость разработки в разных студиях
 										может
 										отличаться в разы?</div>
@@ -494,10 +609,7 @@
 							</div>
 							<div class="questions__item item-questions">
 								<div class="item-questions__trigger">
-									<div class="item-questions__button item-questions__button--active">
-										<span></span>
-										<span></span>
-									</div>
+									<button class="item-questions__button item-questions__button--active"></button>
 									<div class="item-questions__label">Приложение требует дальнейшей поддержки?</div>
 								</div>
 								<div class="item-questions__content item-questions__content--active">Обязательно. Даже
@@ -598,8 +710,7 @@
 		</footer>
 		<!-- ./footer -->
 
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.js"
-			integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 </body>
 </div>
