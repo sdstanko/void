@@ -1,0 +1,152 @@
+.footer {
+	padding-top: 370px;
+
+	@media (max-width: 1024px) {
+		padding-top: 50px;
+	}
+
+	&__inner {}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 30px;
+		}
+
+		.request__form {
+			flex-grow: 0;
+			max-height: 50px;
+
+			@media (max-width: 900px) {
+				flex-grow: 1;
+				margin-bottom: 70px;
+			}
+		}
+
+		&--top {
+			@media (max-width: 900px) {
+				flex-wrap: wrap;
+			}
+		}
+
+		&--bottom {
+			@media (max-width: 470px) {
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	&__text {
+		@media (max-width: 900px) {
+			flex: 0 1 100%;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 129.4%;
+		color: #000000;
+
+		@media (max-width: 1024px) {
+			font-size: 24px;
+		}
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #333333;
+
+		@media (max-width: 1024px) {
+			font-size: 15px;
+		}
+	}
+
+	&__contact {
+		@media (max-width: 900px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__call {
+		display: block;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #000000;
+		text-decoration: none;
+	}
+
+	&__email {
+		display: block;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #62D6B3;
+		text-decoration: none;
+	}
+
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 0 1 40%;
+
+		@media (max-width: 900px) {
+			display: none;
+		}
+	}
+
+	&__nav-link {
+		flex: 0 1 50%;
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 129.4%;
+		color: #000000;
+		text-decoration: none;
+	}
+
+	&__socials {
+		display: flex;
+
+		@media (max-width: 470px) {
+			margin: 0 auto 15px;
+			text-align: center;
+		}
+	}
+
+	&__social {
+		&+& {
+			margin-left: 5px;
+		}
+	}
+
+	&__copyright {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 129.4%;
+		color: #000000;
+
+		@media (max-width: 470px) {
+			flex: 0 1 100%;
+			text-align: center;
+		}
+	}
+}
+
+.request {
+
+	&__form {}
+
+	&__phone {}
+
+	&__button {}
+}

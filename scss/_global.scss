@@ -1,0 +1,126 @@
+html {
+	font-family: 'Museo-Sans';
+
+}
+
+.page-wrapper {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+	text-decoration: none;
+	white-space: nowrap;
+	background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%);
+	box-shadow: 0px 20px 30px rgba(98, 214, 179, 0.3);
+	transition: all .2s linear;
+
+	@media (max-width: 1024px) {
+		padding: 12px 22px;
+	}
+
+	&:hover {
+
+		&::before {
+			opacity: 1;
+
+		}
+
+		background: linear-gradient(93.99deg, #2FE99C 0.85%, #33B8B6 100%);
+	}
+}
+
+.inner {
+	padding: 100px 0;
+
+	@media (max-width: 1024px) {
+		padding: 60px 0;
+	}
+}
+
+.title {
+	margin-bottom: 12px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 129.4%;
+	text-transform: uppercase;
+	color: #3AB2B4;
+
+	@media (max-width: 1024px) {
+		margin-bottom: 8px;
+		font-size: 17px;
+	}
+
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+
+.subtitle {
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 129.4%;
+	text-transform: uppercase;
+	color: #333333;
+
+	@media (max-width: 1024px) {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		font-size: 26px;
+	}
+
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 40px;
+		height: 3px;
+		background: linear-gradient(268.32deg, #2FE99C 0%, #33B8B6 100%);
+
+		@media (max-width: 768px) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.description {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 129.4%;
+	color: #000000;
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+	}
+}
+

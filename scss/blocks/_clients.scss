@@ -1,0 +1,46 @@
+.clients {
+	padding: 100px 0 50px;
+
+	@media (max-width: 1024px) {
+		padding: 50px 0 25px;
+	}
+
+	&__inner {}
+
+	&__title {}
+
+	&__subtitle {
+		margin-bottom: 65px;
+	}
+
+	&__row {
+		max-width: 930px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+
+	&__item {
+		margin-bottom: 50px;
+		display: flex;
+		flex: 0 1 20%;
+		justify-content: center;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			flex: 0 1 33.33333%;
+			margin: 0 auto 20px;
+		}
+
+		@media (max-width: 600px) {
+			flex: 0 1 50%;
+		}
+	}
+
+	&__item-image {
+		transition: .2s linear;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}

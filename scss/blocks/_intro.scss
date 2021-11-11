@@ -1,0 +1,178 @@
+.intro {
+	position: relative;
+	padding-top: 80px;
+	background: url('../images/intro-img.png') right bottom no-repeat;
+	background-color: #F8F8FA;
+	color: #333333;
+
+	@media (max-width: 1024px) {
+		padding-top: 40px;
+		background-position-y: 100px;
+		background-size: 415px;
+	}
+
+	@media (max-width: 768px) {
+		background: url('../images/intro-img-sm.png') no-repeat;
+		background-color: #F8F8FA;
+		background-position: 100% 90px;
+		background-size: 250px;
+	}
+
+	@media (max-width: 400px) {
+		background-position: 110% 110px;
+		background-size: 230px;
+	}
+
+	&__inner {
+		padding-bottom: 60px;
+
+		@media (max-width: 580px) {
+			padding: 0;
+		}
+	}
+
+	&__content {
+		
+		padding-top: 80px;
+
+		@media (max-width: 768px) {
+			padding-top: 40px;
+		}
+	}
+
+	&__text {}
+
+	// &__image {
+	// 	position: absolute;
+	// 	right: 0;
+	// 	bottom: 0;
+
+	// 	@media (max-width: 1024px) {
+	// 		right: -70px;
+	// 		bottom: -50px;
+	// 	}
+
+	// 	img {
+	// 		@media (max-width: 1024px) {
+	// 			max-height: 550px;
+	// 		}
+
+	// 		@media (max-width: 768px) {
+	// 			max-height: 450px;
+	// 		}
+	// 	}
+	// }
+}
+
+.text-intro {
+
+	&__title {
+		max-width: 620px;
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 120%;
+		
+		@media (max-width: 1024px) {
+			font-size: 35px;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 22px;
+			max-width: 80%;
+		}
+
+		@media (max-width: 400px) {
+			max-width: 100%;
+		}
+
+		&--green {
+			display: block;
+			margin-bottom: 50px;
+			color: #30DDA2;
+
+			@media (max-width: 768px) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	&__list {
+		max-width: 500px;
+
+		@media (max-width: 768px) {
+			max-width: 55%;
+		}
+	}
+
+	&__line {
+		position: relative;
+		padding-left: 40px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 140%;
+
+		@media (max-width: 1024px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 768px) {
+			font-size: 15px;
+		}
+
+		&+& {
+			margin-top: 20px;
+
+			@media (max-width: 1024px) {
+				margin-top: 10px;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			background: url(../images/icons/intro-check.svg);
+		}
+	}
+
+	&__buttons {
+		margin-top: 70px;
+
+		@media (max-width: 1024px) {
+			margin-top: 40px;
+		}
+
+		@media (max-width: 580px) {
+			margin: 15% -15px 0;
+			padding: 25px 15px;
+			background-color: #F8F8FA;
+		}
+
+		@media (max-width: 340px) {
+			margin-top: 0;
+		}
+	}
+
+	&__btn {
+		@media (max-width: 768px) {
+			display: block;
+			max-width: 345px;
+			text-align: center;
+		}
+
+		@media (max-width: 580px) {
+			max-width: 100%;
+		}
+
+		&+& {
+			margin-left: 30px;
+
+			@media (max-width: 768px) {
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+}
